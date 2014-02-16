@@ -5,7 +5,7 @@
          version="2.5"
          xmlns="http://java.sun.com/xml/ns/javaee">
 
-  <display-name>Gateway Demo</display-name>
+  <display-name>SAP UI5 Demo</display-name>
 
   <!-- ============================================================== -->
   <!-- UI5 resource servlet used to handle application resources      -->
@@ -34,9 +34,9 @@
   <!-- END: DEV MODE -->
 
 
-  <!-- ============================================================== -->
-  <!-- Cache Control Filter to prevent caching of any resource        -->
-  <!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Cache Control Filter to prevent caching of any resource        -->
+<!-- ============================================================== -->
 <!-- 
   <filter>
     <display-name>CacheControlFilter</display-name>
@@ -65,34 +65,8 @@
   </filter-mapping>
 -->
 
- 
- 
-<!--  ============================================================== 
-	UI5 proxy servlet                                             
-	==============================================================
 
-	<servlet>
-		<servlet-name>GatewayProxy</servlet-name>
-		<servlet-class>org.esigate.servlet.AggregatorServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>SharepointProxy</servlet-name>
-		<servlet-class>org.esigate.servlet.AggregatorServlet</servlet-class>
-		<init-param>
-			<param-name>provider</param-name>
-			<param-value>sharepointproxy</param-value>
-		</init-param>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>GatewayProxy</servlet-name>
-		<url-pattern>/gateway/*</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>SharepointProxy</servlet-name>
-		<url-pattern>/sharepoint/*</url-pattern>
-	</servlet-mapping> -->
-
-	<!-- ============================================================== -->
+<!-- ============================================================== -->
 <!-- Connectivity Proxy servlet  -->
 <!-- ============================================================== -->
 

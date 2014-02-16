@@ -30,4 +30,4 @@ UI5MVN consists of a simple sample application that reads data from the SAP Gate
   ```mvn clean install```
 6. Deploy to your local Hana Cloud Server ```mvn nwcloud:deploy-local```
 7. Start your local Hana Cloud Server ```mvn nwcloud:start-local```
-8. Browse to the start page ```http://localhost:8080/GatewayDemo```
+8. Browse to the start page ```http://localhost:8080/SAPUI5Demo/```
