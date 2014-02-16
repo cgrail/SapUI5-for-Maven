@@ -33,6 +33,29 @@
    			<packagingExcludes>WEB-INF/lib/slf4j*.jar</packagingExcludes>
         </configuration>
       </plugin>
+          <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <!-- here the phase you need -->
+            <phase>package</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${nw.cloud.sdk.path}\server\config_master\service.destinations\destinations</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>src/main/destinations</directory>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>
        <plugin>
             <groupId>com.sap.research</groupId>
             <artifactId>nwcloud-maven-plugin</artifactId>
