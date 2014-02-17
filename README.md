@@ -17,7 +17,7 @@ UI5MVN consists of a simple sample application that reads data from the SAP Gate
 * SAP Gateway Demo System user - apply at http://scn.sap.com/docs/DOC-31221
 
 ##Installation
-1. Clone the plugin project from the git repository to a directory of your choice. 
+1. Clone the  project from the git repository to a directory of your choice. 
 2. Rename or copy the following files:
   * `pom.xml.local` to `pom.xml`
   * `nwcloud.properties` to `nwcloud.properties.local`
