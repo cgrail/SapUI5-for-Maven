@@ -14,18 +14,21 @@ UI5MVN consists of a simple sample application that reads data from the SAP Gate
 * SAP Hana Cloud Platform SDK - get it from https://tools.hana.ondemand.com/#cloud
 * Hana Cloud Platform trial account - get it from https://account.hanatrial.ondemand.com/
 * Hana Cloud Maven Plugin - get it at https://github.com/SAP/cloud-maven-plugin
+* SAP Gateway Demo System user - apply at http://scn.sap.com/docs/DOC-31221
 
 ##Installation
 1. Clone the plugin project from the git repository to a directory of your choice. 
 2. Rename or copy the following files:
   * `pom.xml.local` to `pom.xml`
   * `nwcloud.properties` to `nwcloud.properties.local`
+  * `src/main/destinations/Gateway.local` to `src/main/destinations/Gateway`
 3. Edit the property `<nw.cloud.sdk.path>` in `pom.xml` to point to your local SAP Hana Cloud Platform SDK 
 4. Edit the following properties in `nwcloud.properties`
   * `sdk.disdk.dir` to point to your local SAP Hana Cloud Platform SDK 
   * `account` - your Hana Cloud Platform account
   * `user` - your Hana Cloud Platform user
   * `password` - Your Hana Cloud Platform password
+5. Edit your username and password in `src/main/destinations/Gateway`
 5. Build and install using maven 
   ```mvn clean install```
 6. Deploy to your local Hana Cloud Server ```mvn nwcloud:deploy-local```
