@@ -11,6 +11,7 @@
 #     - Linux/Mac users: Just use normal slash as usual (e.g. /home/myuser/bin/neo-sdk)
 
 #sdk.dir=C:\\_neo\\com.sap.core.jpaas.sdk.assembly-2.0.4-20121219.170625-33-early-access-assembly
+sdk.dir="Path to your Hana Cloud SDK"
 
 # Proxy settings for Java Virtual Machine
 # - Proxy settings are tried to be autodetected from environment variables.
@@ -31,7 +32,7 @@ host=https://hanatrial.ondemand.com
 # account=p1630844092trial
 
 # HANA account
-account=  @Replace with your hana account
+account=  "Your Hana account"
 
 ### DTS team account
 ### host=https://prod.jpaas.sapbydesign.com
@@ -49,12 +50,12 @@ application=gateway
 # user=P1630844092
 
 # HANA user
-user= @Replace with your hana user
+user= "Your SCN User"
 
 ### DTS team user
 #user=i051108
 
-password= @Replace with your hana password
+password= "Your SCN user"
 
 # -----------------------------------------------------------------------------
 # Optional settings

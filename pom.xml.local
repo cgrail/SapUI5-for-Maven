@@ -11,6 +11,8 @@
 		<nw.cloud.sdk.version>1.44.0.1</nw.cloud.sdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<nw.cloud.sdk.path>"Path to the Hana Cloud SDK"</nw.cloud.sdk.path>		
+		
 	</properties>
   
   <build>
